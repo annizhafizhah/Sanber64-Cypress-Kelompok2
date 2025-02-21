@@ -2,5 +2,5 @@
 - Mohammad Fachri Arsila 
 - Tito Simatupang (Tito0023)
 - Annizhamul Hafizhah (annizhafizhah)
-- Miftahul Fiqri
+- Miftahul Fiqri (mifqiii)
 - Muhammad Daffa Attirmidzi Fahlevi (daffattrmdzi)
