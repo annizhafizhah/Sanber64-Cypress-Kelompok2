@@ -1,4 +1,11 @@
 {
+    "validUser": {
+      "firstName": "Kelompok",
+      "lastName": "Dua",
+      "email": "kelompok2@mail.com",
+      "password": "Kelompok2",
+      "confirmPassword": "Kelompok2"
+    },
     "existingUser": {
       "firstName": "Kelompok",
       "lastName": "Dua",

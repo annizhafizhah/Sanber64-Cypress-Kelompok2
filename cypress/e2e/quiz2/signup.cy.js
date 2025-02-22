@@ -2,6 +2,14 @@ describe('Sign Up Test', () => {
   beforeEach(() => {
     cy.visit('https://magento.softwaretestingboard.com/customer/account/create/.')
   })
+  it('Success Sign Up', () => {
+    cy.get('#firstname').type('Kelompok')
+    cy.get('#lastname').type('Dua')
+    cy.get('#email_address').type('kelompok2@mail.com')
+    cy.get('#password').type('Kelompok2')
+    cy.get('#password-confirmation').type('Kelompok2')
+    cy.get("button[title='Create an Account']").click()
+  })
   it('Failed Sign Up - Existing email', () => {
     cy.get('#firstname').type('Kelompok')
     cy.get('#lastname').type('Dua')
