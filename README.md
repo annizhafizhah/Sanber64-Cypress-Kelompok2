@@ -3,4 +3,4 @@
 - Tito Simatupang (Tito0023)
 - Annizhamul Hafizhah (annizhafizhah)
 - Miftahul Fiqri (mifqiii)
-- Muhammad Daffa Attirmidzi Fahlevi (daffattrmdzi)
+- Muhammad Daffa Attirmidzi Fahlevi (daffattrmdzi) : Sign Up
