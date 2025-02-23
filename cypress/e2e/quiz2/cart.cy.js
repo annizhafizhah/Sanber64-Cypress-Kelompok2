@@ -6,20 +6,13 @@ describe('Shopping Cart > Add, edit or Remove Products in the Cart', () => {
     cy.get('#send2').click(); 
   })
 
-  it('Positive Case: Edit Account Information Successfully', () => {
-    cy.visit('https://magento.softwaretestingboard.com/customer/account/edit/')
-    cy.get('#firstname').clear().type('Kelompok')
-    cy.get('#lastname').clear().type('Dua Sanber')
-    cy.get('button[title="Save"]').click()
-    cy.contains('You saved the account information.').should('be.visible')
-  })
-
-  it('Positive Case: Edit Account Information Successfully', () => {
-    cy.visit('https://magento.softwaretestingboard.com/customer/account/edit/')
-    cy.get('#firstname').clear().type('Kelompok')
-    cy.get('#lastname').clear().type('Dua Sanber')
-    cy.get('button[title="Save"]').click()
-    cy.contains('You saved the account information.').should('be.visible')
+  it('Positive Case - Successfully added the product to the cart', () => {
+    cy.get('.input-text').type('Savvy Shoulder Tote{enter}');
+    cy.get('[alt="Savvy Shoulder Tote"]').click();
+    cy.get('#product-addtocart-button').click();
+    cy.wait(5000);
+    cy.get('.showcart').click()
+    cy.get('a').contains('Savvy Shoulder Tote').should('be.visible')
   })
 
 })
