@@ -14,4 +14,12 @@ describe('Shopping Cart > Add, edit or Remove Products in the Cart', () => {
     cy.contains('You saved the account information.').should('be.visible')
   })
 
+  it('Positive Case: Edit Account Information Successfully', () => {
+    cy.visit('https://magento.softwaretestingboard.com/customer/account/edit/')
+    cy.get('#firstname').clear().type('Kelompok')
+    cy.get('#lastname').clear().type('Dua Sanber')
+    cy.get('button[title="Save"]').click()
+    cy.contains('You saved the account information.').should('be.visible')
+  })
+
 })
