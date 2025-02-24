@@ -1,0 +1,46 @@
+{
+    "validAddress": {
+      "firstName": "Kelompok",
+      "lastName": "Sanber Dua",
+      "company": "Sanber",
+      "telephone": "08123456789",
+      "street": "Jln Gotong Royong",
+      "city": "Jakarta Tenggara",
+      "zip": "12345",
+      "country": "United States",
+      "region": "New York"
+    },
+    "invalidAddress": {
+      "firstName": "",
+      "lastName": "",
+      "telephone": "",
+      "street": "",
+      "city": "",
+      "zip": ""
+    },
+    "addressWithBilling": {
+      "firstName": "Kelompok",
+      "lastName": "Sanber Dua",
+      "company": "Sanber",
+      "telephone": "08123456789",
+      "street": "Jln Gotong Royong",
+      "city": "Jakarta Tenggara",
+      "zip": "12345",
+      "country": "United States",
+      "region": "New York",
+      "defaultBilling": true
+    },
+    "addressWithShipping": {
+      "firstName": "Kelompok",
+      "lastName": "Sanber Dua",
+      "company": "Sanber",
+      "telephone": "08123456789",
+      "street": "Jln Gotong Royong",
+      "city": "Jakarta Tenggara",
+      "zip": "12345",
+      "country": "United States",
+      "region": "New York",
+      "defaultShipping": true
+    }
+  }
+  
