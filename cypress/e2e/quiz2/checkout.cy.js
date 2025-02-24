@@ -1,6 +1,6 @@
 describe('Magento Checkout Automation', () => {
     beforeEach(() => {
-        cy.visit('https://your-magento-store.com');
+        cy.visit('https://magento.softwaretestingboard.com/');
     });
 
     // Positive Case 1: Successfully add a product to cart and complete checkout
