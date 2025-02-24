@@ -1,19 +1,20 @@
 describe('Magento Checkout Automation', () => {
     beforeEach(() => {
-        cy.visit('https://magento.softwaretestingboard.com/');
+        cy.visit('https://magento.softwaretestingboard.com/customer/account/login/referer/aHR0cHM6Ly9tYWdlbnRvLnNvZnR3YXJldGVzdGluZ2JvYXJkLmNvbS9jdXN0b21lci9hY2NvdW50L2xvZ291dFN1Y2Nlc3Mv/');
+        cy.get('#email').type('kelompok2@mail.com');
+        cy.get('#pass').type('Kelompok2');
+        cy.get('#send2').click();
     });
 
     // Positive Case 1: Successfully add a product to cart and complete checkout
     it('Should add a product to cart and complete checkout', () => {
-        cy.get('[name="q"]').type('T-shirt{enter}');
-        cy.get('.product-item-link').first().click();
-        cy.get('[id^="option-label-size-"]').first().click();
-        cy.get('[id^="option-label-color-"]').first().click();
+        cy.get('.input-text').type('Savvy Shoulder Tote{enter}');
+        cy.get('[alt="Savvy Shoulder Tote"]').click();
         cy.get('#product-addtocart-button').click();
-        cy.get('.action.showcart').click();
-        cy.get('a.viewcart').click();
-        cy.get('.checkout-methods-items button').click();
-        cy.get('#customer-email').type('kelompok2@mail.com');
+        cy.wait(5000);
+        cy.get('.showcart').click()
+        cy.get('#top-cart-btn-checkout').click();
+        cy.get('#customer-email.input-text').type('kelompok2@mail.com');
         cy.get('[name="firstname"]').type('Kelompok');
         cy.get('[name="lastname"]').type('Sanber Dua');
         cy.get('[name="street[0]"]').type('Jln Gotong Royong');
@@ -29,7 +30,7 @@ describe('Magento Checkout Automation', () => {
 
     // Positive Case 2: Successfully login before checkout
     it('Should login and complete checkout', () => {
-        cy.get('.login-link').click();
+        cy.get('.signup').click();
         cy.get('#email').type('kelompok2@mail.com');
         cy.get('#pass').type('Kelompok2!');
         cy.get('#send2').click();
