@@ -1,0 +1,38 @@
+{
+    "validUser": {
+      "email": "kelompok2@mail.com",
+      "password": "Kelompok2!"
+    },
+    "invalidPasswordUser": {
+      "email": "kelompok2@mail.com",
+      "password": "kelompokdua"
+    },
+    "updatedAccount": {
+      "firstName": "Kelompok",
+      "lastName": "Dua Sanber"
+    },
+    "invalidAccount": {
+      "firstName": "",
+      "lastName": ""
+    },
+    "emailUpdate": {
+      "newEmail": "kelompok2@mail.com",
+      "currentPassword": "Kelompok2!"
+    },
+    "passwordUpdate": {
+      "currentPassword": "Kelompok2!",
+      "newPassword": "Kelompok2",
+      "confirmPassword": "Kelompok2"
+    },
+    "invalidPasswordUpdate": {
+      "currentPassword": "Kelompok2",
+      "newPassword": "Kelompok@",
+      "confirmPassword": "Kelompoksanber2"
+    },
+    "weakPasswordUpdate": {
+      "currentPassword": "Kelompok2",
+      "newPassword": "kelompokduak",
+      "confirmPassword": "kelompokduak"
+    }
+  }
+  
